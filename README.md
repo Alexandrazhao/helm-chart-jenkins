@@ -1,6 +1,6 @@
 # Helm Chart For Jenkins
 This project is to write a helm chart for Jenkins, and this will show you some basic helm commands to interact with. 
-After building a helm list, using ```helm upgrade --install REALEASE-NAME jenkins/jenkins```
+After building a helm list, using ```helm upgrade --install REALEASE-NAME jenkins/jenkins``` to install the chart. 
 - This is a created helm chart for jenkins, if you want to create a new helm chart, run ```helm create REALEASE-NAME``` to generate a new helm chart.
 
 1. ```helm list``` to show all helm list you built.

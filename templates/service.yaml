@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jenkins-svc
+  namespace: alexz-test-helm
+  annotations:
+    prometheus.io/scrape: 'true'
+    prometheus.io/path:   /
+    prometheus.io/port:   '8080'
+spec:
+  selector:
+    app: jend
+  type: LoadBalancer
+  ports:
+    - port: {{ .Values.port }}
+      targetPort: 8080
+      nodePort: {{ .Values.nodePort }}
+  

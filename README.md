@@ -11,5 +11,6 @@ After building a helm chart, using ```helm upgrade --install REALEASE-NAME jenki
 ```helm upgrade REALEASE-NAME ./REPO_NAME --set replicaCount=8``` to upgrade the ```{{ .Values.replicaCount }}``` to 8.
 6. Run ```helm get values REALEASE-NAME``` to checkout the value you upgraded. Or run ```helm get -a values REALEASE-NAME``` to checkout all values in the helm chart. 
 7. Run ```helm rollback REALEASE-NAME VERSION``` to rollback to the previous version. 
+8. Run ```helm uninstall REALEASE-NAME``` to uninstall the helm chart from the cluster. 
 
 
